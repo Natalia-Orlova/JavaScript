@@ -6,10 +6,10 @@
 */
 
 const test = confirm('У вас много денег?');
-if (test === true) {
-  console.log('Скоро будем у вас ;)');
-} else {
-  console.log('До свидания.');
-}
+// if (test) {
+//   console.log('Скоро будем у вас ;)');
+// } else {
+//   console.log('До свидания.');
+// }
 
-// console.log((test === true) ? 'Скоро будем у вас ;)' : 'До свидания.');
+console.log((test) ? 'Скоро будем у вас ;)' : 'До свидания.');
