@@ -14,5 +14,5 @@
 */
 
 const celsius = +prompt("Введите температуру в градусах Цельсия");
-const fahrenheit = 1.8 * celsius + 32;
+const fahrenheit = Math.round(1.8 * celsius + 32);
 alert(`Цельсий: ${celsius}, Фаренгейт: ${fahrenheit}`);
