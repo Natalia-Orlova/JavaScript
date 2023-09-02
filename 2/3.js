@@ -15,15 +15,14 @@
 */
 
 const dayNumber = Number(prompt('Введите целое число в интервале [1, 32)'));
-let decade = 0;
 if (dayNumber > 0 && dayNumber < 11) {
-    decade = 1;
+    let decade = 1;
     console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца`);
 } else if (dayNumber > 10 && dayNumber < 21){
-    decade = 2;
+    let decade = 2;
     console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца`);   
 } else if (dayNumber > 20 && dayNumber < 32){
-    decade = 3;
+    let decade = 3;
     console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца`);   
 } else {
     console.log('Введено неверное значение');
