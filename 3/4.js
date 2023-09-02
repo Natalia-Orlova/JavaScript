@@ -18,4 +18,52 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number1 = +(prompt('Введите первое число'));
+const number2 = +(prompt('Введите второе число'));
+
+/**
+ * Функция суммирует два числа
+ * @param {number} number1 число
+ * @param {number} number2 число
+ * @returns результат
+ */
+const sum = (number1, number2) => number1 + number2;
+
+/**
+ * Функция перемножает два числа
+ * @param {number} number1 число
+ * @param {number} number2 число
+ * @returns результат
+ */
+const multiply = (number1, number2) => number1 * number2;
+
+/**
+ * Функция вычисляет частное двух чисел
+ * @param {number} number1 число
+ * @param {number} number2 число
+ * @returns результат
+ */
+const divide = (number1, number2) => number1 / number2;
+
+/**
+ * Функция вычитает из большего числа меньшее
+ * @param {number} number1 число
+ * @param {number} number2 число
+ * @returns результат
+ */
+const diff = (number1, number2) => {
+    if (number1 > number2) {
+        return number1 - number2;
+    } else if (number2 > number1) {
+        return number2 - number1;
+    } else {
+        return 0;
+    }
+}
+
+console.log(`${number1} + ${number2} = ${sum(number1, number2)}`);
+console.log(`${number1} * ${number2} = ${multiply(number1, number2)}`);
+console.log(`${number1} / ${number2} = ${divide(number1, number2)}`);
+const maxNumber = Math.max(number1,number2);
+const minNumber = Math.min(number1, number2);
+console.log(`${maxNumber} - ${minNumber} = ${diff(number1, number2)}`);

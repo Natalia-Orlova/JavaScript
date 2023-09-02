@@ -7,6 +7,11 @@
 который получаем от функции, в консоль.
 */
 
+/**
+ * Функция возводит число в куб
+ * @param {number} number число
+ * @returns результат
+ */
 function cube(number) {
     return number ** 3;
 }
