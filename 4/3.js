@@ -14,4 +14,18 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const array = [];
+const newArray = [];
+
+for (let i = 0; i < 5; i++) {
+    array.push(Math.trunc(Math.random() * 10));
+    if (array[i] === 3) {
+        newArray.push(i);
+    }
+}
+
+console.log(array);
+console.log(`Сумма элементов массива: ${array.reduce((sum, num) => sum + num)}`);
+console.log(`Минимальное значение в массиве: ${Math.min(...array)}`);
+console.log(newArray);
+
