@@ -18,14 +18,14 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-const number1 = +(prompt('Введите первое число'));
-const number2 = +(prompt('Введите второе число'));
+const number1 = +prompt('Введите первое число');
+const number2 = +prompt('Введите второе число');
 
 /**
  * Функция суммирует два числа
  * @param {number} number1 число
  * @param {number} number2 число
- * @returns результат
+ * @returns {number} сумма чисел
  */
 const sum = (number1, number2) => number1 + number2;
 
@@ -33,7 +33,7 @@ const sum = (number1, number2) => number1 + number2;
  * Функция перемножает два числа
  * @param {number} number1 число
  * @param {number} number2 число
- * @returns результат
+ * @returns {number} произведение чисел
  */
 const multiply = (number1, number2) => number1 * number2;
 
@@ -41,7 +41,7 @@ const multiply = (number1, number2) => number1 * number2;
  * Функция вычисляет частное двух чисел
  * @param {number} number1 число
  * @param {number} number2 число
- * @returns результат
+ * @returns {number} частное чисел
  */
 const divide = (number1, number2) => number1 / number2;
 
@@ -49,16 +49,16 @@ const divide = (number1, number2) => number1 / number2;
  * Функция вычитает из большего числа меньшее
  * @param {number} number1 число
  * @param {number} number2 число
- * @returns результат
+ * @returns {number} разность чисел
  */
 const diff = (number1, number2) => {
     if (number1 > number2) {
         return number1 - number2;
-    } else if (number2 > number1) {
+    } 
+    if (number2 > number1) {
         return number2 - number1;
-    } else {
-        return 0;
-    }
+    } 
+    return 0;
 }
 
 console.log(`${number1} + ${number2} = ${sum(number1, number2)}`);

@@ -10,7 +10,7 @@
 /**
  * Функция возводит число в куб
  * @param {number} number число
- * @returns результат
+ * @returns {number} значение, возведенное в куб
  */
 function cube(number) {
     return number ** 3;
