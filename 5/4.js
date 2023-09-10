@@ -31,4 +31,27 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// 1
+const result = products.filter(product => {
+  if ('photos' in product && product.photos.length > 0) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(result);
+
+// 2
+
+products.sort((product1, product2) => {
+  if (product1.price > product2.price) {
+    return 1;
+  }
+  if (product1.price < product2.price) {
+    return -1;
+  }
+  return 0;
+})
+
+console.log(products);
