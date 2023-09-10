@@ -43,7 +43,6 @@ const result = products.filter(product => {
 console.log(result);
 
 // 2
-
 products.sort((product1, product2) => {
   if (product1.price > product2.price) {
     return 1;
