@@ -30,26 +30,50 @@
 
         // 1. Найти по id, используя getElementById, элемент с id равным "super_link" и вывести этот элемент в консоль.
         
-        const s_link = div.get
+        const s_link = document.getElementById('super_link');
+        console.log(s_link);
 
         // 2. Внутри всех элементов на странице, которые имеют класс "card-link", поменяйте текст внутри элемента на "ссылка".
         
+        const card_link = document.querySelectorAll('.card-link');
+        card_link.forEach((elem) => {
+            elem.textContent = 'ссылка';
+        });
 
         // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
-    
+        
+        const card_body = document.querySelector('.card-body');
+        const card_linkBody = card_body.querySelectorAll('.card-link');
+        console.log(card_linkBody);
 
         // 4. Найти первый попавшийся элемент на странице у которого есть атрибут data-number со значением 50 и вывести его в консоль.
         
-
+        const data_number = document.querySelector('[data-number = "50"]');
+        console.log(data_number);
+        
         // 5. Выведите содержимое тега title в консоль.
         
+        const title_text = document.querySelector('title').textContent;
+        console.log(title_text);
 
         // 6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
         
+        const card_titleParent = document.querySelector('.card-title').parentElement;
+        console.log(card_titleParent);
 
         // 7. Создайте тег <p>, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
-        
+
+        const card = document.querySelector('.card');
+        const p_text = document.createElement('p');
+        p_text.textContent = 'Привет';
+        card.insertBefore(p_text, card.firstChild);    
+
         // 8. Удалите тег h6 на странице.
+
+        const rmTag = document.querySelector('h6');
+        rmTag.remove();
+
+    </script>
 </body>
 
 </html>
