@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        margin-top: 96px;
+        text-align: center;
+        margin-bottom: 48px;
+    
+        &__title {
+            color: #222;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+    
+        &__subtitle {
+            color: #9F9F9F;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    
+    .product-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 48px;
+    
+        .product {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            
+            &__info {
+                display: flex;
+                padding: 24px 16px;
+                flex-direction: column;
+                justify-content: center;
+                gap: 16px;
+                background-color: #F8F8F8;
+    
+                &_name {
+                    color: #000;
+                    font-size: 13px;
+                    font-weight: 400;
+                    transition: 0.3s;
+    
+                    &:hover {
+                        color: #F16D7F;
+                    }
+                }
+    
+                &_desc {
+                    color: #5D5D5D;
+                    font-size: 14px;
+                    font-weight: 300;
+                    max-width: 315px;
+                }
+    
+                &_price {
+                    color: #F16D7F;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+    &__btn {
+        margin-bottom: 96px;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 14px 39px 15px 39px;
+        background: #FFF;
+        border: #F16D7F solid 1px;
+        transition: all 0.3s;
+    
+        &:hover {
+            color: #fff;
+            background-color: #F16D7F;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
